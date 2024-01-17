@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(0, "");
+	
+	int a;
+	cout << "[-] Времена года \n\n";
+
+	cout << "[1] Лето \n";
+	cout << "[2] Осень \n";
+	cout << "[3] Зима \n";
+	cout << "[4] Весна \n\n";
+	cout << "[0] Выход \n\n";
+
+	do {
+		cout << "Введите цифру:"; cin >> a;
+
+		if (a == 1) {
+			cout << "Наступило лето.\n";
+		}
+		else if (a == 2) {
+			cout << "Наступила осень.\n";
+		}
+		else if (a == 3) {
+			cout << "Наступила зима.\n";
+		}
+		else if (a == 4) {
+			cout << "Наступила весна.\n";
+		}
+		else {
+			if (a == 0) {
+				cout << "Вы вышли.\n";
+			}
+			else {
+				cout << "Вы ввели неправильное число.\n";
+			}
+		}
+	} while (a != 0);
+
+	
+	return 0;
+}
